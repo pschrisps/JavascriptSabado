@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: -200px;
+  padding: 100px 0 0 0;
+  transition: ease 1s;
+}
+#menu li {
+  padding: 0 0 10px 10px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  font-size: 15pt;
+}
+
+#fechar {
+  color: #fff;
+  font-size: 30pt;
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#abrir {
+  font-family: arial;
+  font-size: 20pt;
+  text-decoration: none;
+  padding: 10;
+  background-color: red;
+  color: white;
+  margin-bottom: 20px;
+}
+#conteudo section {
+  margin: 50px;
+}
+#conteudo {
+  transition: ease 1s;
+}
+
+#fundomodal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+#caixamodal {
+  background-color: #fff;
+  width: 50vw;
+  height: 50vw;
+  padding: 10px;
+  margin: auto;
+}
+
+#caixamodal:img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+#caixamodal #cabecalho {
+  display: flex;
+  flex-direction: row;
+}
+
+#caixamodal #cabecalho #fechar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
